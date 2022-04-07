@@ -17,10 +17,14 @@ i {
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* impostazioni header */
 header .top-bar {
     background: #000;
-    width: 100vw;
+    width: 100%;
     height: 5vh;
     display: flex;
     justify-content: flex-end;
@@ -34,4 +38,33 @@ header .top-bar .item-sx, .item-dx {
     margin-right: 5px;
     border-radius: 5px;
     align-self: center;
+}
+
+
+/* impostazioni main */
+main .grid-box {
+    background: #a7a7a7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+main .grid-box .user {  
+    display: flex;
+    /* debug */
+    width: 250px;
+    height: 150px;
+    background: lime;
+}
+
+.grid-box .user {
+    margin: 80px;
+}
+
+.user a {
+    font-size: 15px;
+    padding: 6px;
+    align-self: flex-end;
+    /* debug */
+    background: #0804fd;
 }

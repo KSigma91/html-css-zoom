@@ -25,7 +25,7 @@ img {
 header .top-bar {
     background: #000;
     width: 100%;
-    height: 5vh;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
 }
@@ -44,6 +44,7 @@ header .top-bar .item-sx, .item-dx {
 /* impostazioni main */
 main .grid-box {
     background: #a7a7a7;
+    padding: 80px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -58,13 +59,56 @@ main .grid-box .user {
 }
 
 .grid-box .user {
-    margin: 80px;
+    margin-right: 5px;
 }
 
 .user a {
+    align-self: flex-end;
     font-size: 15px;
     padding: 6px;
-    align-self: flex-end;
     /* debug */
     background: #0804fd;
+}
+
+
+
+
+/* impostazioni footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+    width: 100%;
+    height: 80px;
+}
+
+/* lato sinistro */
+footer #button-sx {  
+    /* align-self: flex-start; */
+    width: 10%;
+    /* debug */
+    height: 80px;
+    background: green;
+}
+
+
+/* lato centrale */
+footer nav {
+    width: 40%;
+    /* debug */
+    height: 80px;
+    background: orange;
+}
+
+nav #button-center { 
+    
+}
+
+
+/* lato destro */
+footer #button-dx {
+    width: 10%;
+    /* debug */
+    height: 80px;
+    background: red;
 }

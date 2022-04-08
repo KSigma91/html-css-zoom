@@ -48,42 +48,39 @@ header .top-bar .item-sx, .item-dx {
 main .grid-box {
     padding: 80px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
-    /* overflow-y: auto; */
-    /* debug */
-    background: #a7a7a7;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background: #000;
 }
 
 main .grid-box .user { 
     position: relative;
-    /* display: flex; */
-    justify-content: flex-start;
-    margin-right: 5px;
-    /* debug */
-    width: 15vw;
-    height: 20vh;
+    display: flex;
+    margin-bottom: 15px;
+    min-width: 245px;
+    height: 160px;
 }
 
-.user .status {
+.grid-box .user a {
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 15px;
+    align-items: flex-start;
+    font-size: 13px;
     font-weight: 400;
     padding: 6px;
     background: rgba(0,0,0,0.5);
-}
-
-.user .status a {
-    align-self: flex-end;
 }
 
 
 
 /* impostazioni footer */
 footer {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: space-between;
     background: #222222;
@@ -97,6 +94,10 @@ footer i {
 
 footer ul li, a {
     font-weight: 300;
+}
+
+footer .fas.fa-angle-up {
+    font-size: 14px;
 }
 
 
@@ -125,25 +126,31 @@ footer #button-sx {
 footer #button-center {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 60%;
 }
 
 #button-center ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
 }
 
 #button-center ul li {
+    font-size: 14px;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    font-size: 12px;
+}
+
+#button-center ul li a {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
-    color: white;
-    list-style-type: none;
-    font-size: 12px;
-    text-align: center;
-    width: 80px;
+    justify-content: space-around;
+    width: 110px;
     height: 60px;
     margin-top: 12px;
+    font-size: 12px;
+    line-height: 22px;
 }
 
 
@@ -159,5 +166,5 @@ footer #button-dx {
 
 footer #button-dx a {
    color: red;
-   
+   font-size: 14px;
 }
